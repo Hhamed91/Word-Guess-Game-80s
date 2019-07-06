@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Guess The Word -80s style!</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<script>
+					// var wordList = [];
+					// $.get('words.txt')
+					// 	.done(function(data) {
+					// 		wordList = data.split('\n');
+					// 		initialize(wordList);
+					// 	console.log('data = ' + data);
+					// })
+		</script>
+	<link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Sigmar+One|Special+Elite" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>Can you guess the song?
+
+				<br>
+			</h1>
+		</div>
+
+		<div class="row center-block match-my-cols">
+			<div class="col-xs-12 col-md-8 text-center left">
+				<h2 id="letsPlay">Press any key to get started!</h2>
+				<h3>Current word:</h3>
+				<div id="currentWord"></div>
+				<br>
+				<div class="row">
+						<div class="col-xs-12 col-md-6">
+								<h3>Letters Guessed:</h3>
+								<div id="lettersGuessed">--</div>
+							</div>
+					<div class="col-xs-12 col-md-6">
+						<h3>Guesses Left:</h3>
+						<div id="guessesLeft">--</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-md-6">
+						<h3>Number of Wins:</h3>
+						<div id="wins">0</div>
+					</div>
+					<div class="col-xs-12 col-md-6">
+						<h3>Number of Losses:</h3>
+						<div id="losses">0</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-xs-12 col-md-4 right">
+				<img class="center-block" src="assets/images/80s.jpg" alt="blueGTSlogo" width="100%" height="150%">
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
