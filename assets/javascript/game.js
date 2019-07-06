@@ -2,7 +2,6 @@ var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m",
 
 var dicWordList = ["IllegalAlien", "Limelight", "Rosanna"];
 
-// I tried to get dicWords from a text file instead of a GET API call, instead of a var of dicWordList
 
 var gameStarted = false;
 var currentWord;
@@ -22,7 +21,7 @@ function initialize() {
 	gameStarted = true;
 	lettersGuessed = [];
 	correctGuesses = 0;
-	wordPlace = Math.floor(Math.random() * 3); // needs to be make the list longer
+	wordPlace = Math.floor(Math.random() * 3); // needs to be make the list longer than just 3 songs
 	currentWord = dicWordList[wordPlace];			//string
 	guessesLeft = 6;		                    //limited to 6 guesses
 	wordAsDashes = makeIntoDashes(currentWord);	//string of dashes

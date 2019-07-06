@@ -6,8 +6,8 @@ body{
 
 
 .jumbotron{
-	background-color: #d5d9e0;
-	color: #444443;
+	background-color: black;
+	color: darkorchid;
 	font-family: 'Abril Fatface', "Times New Roman", serif;
 	margin-bottom: 1%;
 	padding-top: .6%;
@@ -26,7 +26,7 @@ body{
 
 h2{
 	font-family: 'Sigmar One', Verdana, Geneva, sans-serif;
-	color: #888880;
+	color: red;
 }
 
 img{
@@ -39,7 +39,7 @@ img{
 }
 
 .left{
-	background-color: #9cb1d6;
+	background-color: lightgray;
 	border-radius: 6px;
 }
 
