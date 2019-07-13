@@ -1,6 +1,6 @@
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 
-var dicWordList = ["IllegalAlien", "Limelight", "Rosanna"];
+var songsList = ["illegalalien", "limelight", "rosanna"];
 
 
 var gameStarted = false;
@@ -11,7 +11,7 @@ var lettersGuessed;
 var numWins = 0;
 var numLosses = 0;
 var getNewWord;
-var wordPlace; //place in dicWordList array
+var wordPlace; //place in songsList array
 var correctGuesses;
 var wordAsArr = [];
 var dashesArray = [];
@@ -22,7 +22,7 @@ function initialize() {
 	lettersGuessed = [];
 	correctGuesses = 0;
 	wordPlace = Math.floor(Math.random() * 3); // needs to be make the list longer than just 3 songs
-	currentWord = dicWordList[wordPlace];			//string
+	currentWord = songsList[wordPlace];			//string
 	guessesLeft = 6;		                    //limited to 6 guesses
 	wordAsDashes = makeIntoDashes(currentWord);	//string of dashes
 	wordAsArr = currentWord.split('');			//array with letters
@@ -73,6 +73,7 @@ function playGame(letter) {
                 // In case the player did not guess the word use alert
 				if (guessesLeft == 0) {
 					alert("Sorry! The correct answer is " + currentWord);
+					console.log("Sorry! The correct answer is " + currentWord);
 					initialize();
 					numLosses++;
 					document.getElementById("losses").innerHTML = numLosses;
@@ -99,6 +100,7 @@ function displayLetter(letter) {
 function checkForWin() {
 	if (dashesArray.indexOf("_") === -1) {
 		alert("WOOHOO! You got it. The correct answer is " + currentWord);
+		console.log("WOOHOO! You got it. The correct answer is " + currentWord);
 		numWins++;
 		document.getElementById("wins").innerHTML = numWins;
 		initialize();
